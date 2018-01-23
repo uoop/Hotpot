@@ -64,8 +64,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tracking" id="2tr-ZA-WLN"/>
                     <connections>
-                        <outlet property="connectButton" destination="Aqs-dF-VDv" id="vuV-rw-c4C"/>
-                        <outlet property="disconnectButton" destination="RJF-gG-ZHU" id="RdS-XY-X81"/>
+                        <outlet property="connectButton" destination="Aqs-dF-VDv" id="kkG-eU-TyX"/>
+                        <outlet property="disconnectButton" destination="RJF-gG-ZHU" id="5b4-d9-gkI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

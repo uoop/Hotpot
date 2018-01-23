@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B57EF00B3A9696D35D7F707B195D69D /* CBExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1E09372323AC49881654121E5EB441 /* CBExtensions.swift */; };
+		152D9FEAE9A64BF2374ED50C2B76DF78 /* Pods-Hotpot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4E0BDB130FF2ABC7D39958B26D0403 /* Pods-Hotpot-dummy.m */; };
+		2103D74682B0F6A265CB663F0A84B843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3F2C9B8E52FEC6702DC3B39055D34227 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		42ADB5CC1E6AC21958F53E214EE8E180 /* DescriptorValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281337FBD7D23A8AE412C333341F6A90 /* DescriptorValue.swift */; };
+		494FF77CA9FD3E1EEE12584825DFB0CC /* SBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEFDA24CECDA096D235D5A10B9B6CB6 /* SBError.swift */; };
+		4E827FBBDCB701FB050FA48188E3D778 /* Pods-HotpotTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C40F00A2EA583F52DA5672688AD732B /* Pods-HotpotTests-dummy.m */; };
+		51787B40F57CD815F5D6C9E2447B7705 /* Pods-HotpotUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36428CBB7CBD37014F153F12103E04D4 /* Pods-HotpotUITests-dummy.m */; };
+		5E3B0A6FF7012D9F675999EB35D32C17 /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DBEA17092394B0C7AF99BE425F0B6E /* Peripheral.swift */; };
+		6F85E7DDDBC776FC16CAA25FA7C0A281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		761E1625D49D78BBAFDD59768D62B5EE /* CBUUIDConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC3E2A0DE3CE32FA70AA6AA3ECAFDD /* CBUUIDConvertible.swift */; };
+		76F6852180BA2C1B1E5865A5D863E186 /* CBUUIDPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC8CE8E1BBC2899A10660CAC0272F91 /* CBUUIDPath.swift */; };
+		7AF92385B7AA188EA9130E5DD96B543F /* PeripheralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C14F232DAA90F64613353D91756614 /* PeripheralProxy.swift */; };
+		80906198D298A7F332B9A3430A73A6E0 /* Pods-HotpotTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 289D757AF68F425F917F527A3448D6AE /* Pods-HotpotTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		889A22EFF5386677BDD885136F39137B /* SwiftyBluetooth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483371E9568E348EAE3C88BC856D132B /* SwiftyBluetooth-dummy.m */; };
+		88AE96BDC1A9C8308645157CF8CC2C2B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		89579E676B4A5B953BEAC356953FB066 /* Central.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863E1AB2B0E3E6A7D60C6F449DA13446 /* Central.swift */; };
+		931DE406BC308BB68CB02EC6689464C6 /* SwiftyBluetooth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4299977C38B1F2C783FEF6AD7A559E54 /* SwiftyBluetooth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98FA0D6FC21C5FAC9F460741D62D46F5 /* Pods-Hotpot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F720D6FA2E8EDF4A2047E154868F7E6 /* Pods-Hotpot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F1BBFEA8B0C63C40C133D74B4C18A9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DDFA6C92145E64917439DB618D9311 /* Util.swift */; };
+		C2E1FA1DAC166BE643E4741096C32FEE /* SwiftyBluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B057A3C9359320F73D9C84FCD0649613 /* SwiftyBluetooth.swift */; };
+		D814A7DAC65C1A930BB22D7DCED0102B /* CentralProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB63F181E0F178EEE8001171544664 /* CentralProxy.swift */; };
+		EF2A59D8DC29CF2A1EE10EA2BC19AEFB /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53CC795604A053EF657F15FF7C2965D /* Result.swift */; };
+		F6E11D09A2CDB89E7E3C7FD39138EAC8 /* Pods-HotpotUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 699D7CF60B511908471EB2895F14F6F5 /* Pods-HotpotUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B57EB5D7AD3D3FEA2117DCEAC865164 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767654A2DFD28227E62792758E1DD1CE;
+			remoteInfo = SwiftyBluetooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BEFDA24CECDA096D235D5A10B9B6CB6 /* SBError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SBError.swift; path = SwiftyBluetooth/Source/SBError.swift; sourceTree = "<group>"; };
+		16BB63F181E0F178EEE8001171544664 /* CentralProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CentralProxy.swift; path = SwiftyBluetooth/Source/CentralProxy.swift; sourceTree = "<group>"; };
+		1810682C14A70F496E432B0084640148 /* Pods-HotpotUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HotpotUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1F08908BD7E2B9DDAB269EE2D3D542E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23DD55C0588E06718D2B4102ECBD660B /* SwiftyBluetooth.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyBluetooth.xcconfig; sourceTree = "<group>"; };
+		281337FBD7D23A8AE412C333341F6A90 /* DescriptorValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DescriptorValue.swift; path = SwiftyBluetooth/Source/DescriptorValue.swift; sourceTree = "<group>"; };
+		289D757AF68F425F917F527A3448D6AE /* Pods-HotpotTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HotpotTests-umbrella.h"; sourceTree = "<group>"; };
+		35DBEA17092394B0C7AF99BE425F0B6E /* Peripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Peripheral.swift; path = SwiftyBluetooth/Source/Peripheral.swift; sourceTree = "<group>"; };
+		36428CBB7CBD37014F153F12103E04D4 /* Pods-HotpotUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HotpotUITests-dummy.m"; sourceTree = "<group>"; };
+		366B3603A38DE7E584EE24F7C95F6F52 /* Pods-Hotpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hotpot.release.xcconfig"; sourceTree = "<group>"; };
+		3FC8CE8E1BBC2899A10660CAC0272F91 /* CBUUIDPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBUUIDPath.swift; path = SwiftyBluetooth/Source/CBUUIDPath.swift; sourceTree = "<group>"; };
+		3FF0691DE1AA0FCA9DCB0440CF9907F5 /* Pods-HotpotUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotpotUITests-frameworks.sh"; sourceTree = "<group>"; };
+		4299977C38B1F2C783FEF6AD7A559E54 /* SwiftyBluetooth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-umbrella.h"; sourceTree = "<group>"; };
+		44DDFA6C92145E64917439DB618D9311 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = SwiftyBluetooth/Source/Util.swift; sourceTree = "<group>"; };
+		4525F22F25F47FB9CF850119292D394B /* KontaktSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KontaktSDK.framework; path = Cocoapods/iOS/KontaktSDK.framework; sourceTree = "<group>"; };
+		483371E9568E348EAE3C88BC856D132B /* SwiftyBluetooth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyBluetooth-dummy.m"; sourceTree = "<group>"; };
+		4AD27274023FDE2906327FFA9F8E1731 /* Pods-HotpotTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HotpotTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C21DE003D781F8C9425BA6218DDFED2 /* Pods-HotpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DDC3E2A0DE3CE32FA70AA6AA3ECAFDD /* CBUUIDConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBUUIDConvertible.swift; path = SwiftyBluetooth/Source/CBUUIDConvertible.swift; sourceTree = "<group>"; };
+		4F7B0E3DCE015B15908A08B0E020AE91 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65026B070B77A922546B63F1D4F1BD19 /* Pods-HotpotTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotpotTests-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		687662A184DD6571508AD0776FF34048 /* Pods-HotpotUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotpotUITests-resources.sh"; sourceTree = "<group>"; };
+		699D7CF60B511908471EB2895F14F6F5 /* Pods-HotpotUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HotpotUITests-umbrella.h"; sourceTree = "<group>"; };
+		6C40F00A2EA583F52DA5672688AD732B /* Pods-HotpotTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HotpotTests-dummy.m"; sourceTree = "<group>"; };
+		70225699880270082CCCF0AA24D9FB08 /* Pods-HotpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotpotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71F8A2A3CA37CB21353C288A6229D21C /* Pods-Hotpot-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hotpot-frameworks.sh"; sourceTree = "<group>"; };
+		75EC015091E2CE723348D45A5AB7FBE1 /* Pods-Hotpot-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hotpot-acknowledgements.markdown"; sourceTree = "<group>"; };
+		78C14F232DAA90F64613353D91756614 /* PeripheralProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PeripheralProxy.swift; path = SwiftyBluetooth/Source/PeripheralProxy.swift; sourceTree = "<group>"; };
+		7E088226249EE1C60444424430964220 /* SwiftyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyBluetooth.framework; path = SwiftyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F720D6FA2E8EDF4A2047E154868F7E6 /* Pods-Hotpot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hotpot-umbrella.h"; sourceTree = "<group>"; };
+		85B6AB7D30D27BBAE92CDB5D5503B89C /* Pods-HotpotTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HotpotTests.modulemap"; sourceTree = "<group>"; };
+		863E1AB2B0E3E6A7D60C6F449DA13446 /* Central.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Central.swift; path = SwiftyBluetooth/Source/Central.swift; sourceTree = "<group>"; };
+		88CD1B41EFB012C11DA4648E15D077E2 /* Pods-HotpotUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HotpotUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8DF72EFE3AAAADED90C1EE459BEB5F08 /* Pods_HotpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HotpotTests.framework; path = "Pods-HotpotTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF90AE34555DA43E0CA10EBB5276F1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98756B12BD82E7265574D8CDC27301C2 /* Pods-HotpotUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HotpotUITests.modulemap"; sourceTree = "<group>"; };
+		9D0975335EB9E6310C5EC68EA677604E /* Pods-HotpotTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HotpotTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9E4E0BDB130FF2ABC7D39958B26D0403 /* Pods-Hotpot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hotpot-dummy.m"; sourceTree = "<group>"; };
+		B00E9D194153389B64B8E5D3AC4F2A3E /* Pods-Hotpot-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hotpot-resources.sh"; sourceTree = "<group>"; };
+		B057A3C9359320F73D9C84FCD0649613 /* SwiftyBluetooth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyBluetooth.swift; path = SwiftyBluetooth/Source/SwiftyBluetooth.swift; sourceTree = "<group>"; };
+		B80C28147511053DA1ECBD45A7E8BEFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C40FC611119445E2A7D6E61126CD05A1 /* Pods-Hotpot-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hotpot-acknowledgements.plist"; sourceTree = "<group>"; };
+		C783C242EC2464B5FC56B2DDA72E4885 /* Pods-HotpotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotpotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7FEE8F767C9492F87A37FC6A92C1BEA /* SwiftyBluetooth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyBluetooth-prefix.pch"; sourceTree = "<group>"; };
+		C800F2FBFE591F420F59638BA525C930 /* Pods-Hotpot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hotpot.modulemap"; sourceTree = "<group>"; };
+		DE2FEC302FE63DCD9DF8A9E41B1A478C /* SwiftyBluetooth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyBluetooth.modulemap; sourceTree = "<group>"; };
+		EECA99A6E1B1700CE0D3741BFFE8493E /* Pods-Hotpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hotpot.debug.xcconfig"; sourceTree = "<group>"; };
+		F048A95AFF08B5EE1CFF7AC0005F9D26 /* Pods-HotpotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HotpotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1FAC5FE75CBD7322EAC5573B81661C8 /* Pods-HotpotTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HotpotTests-resources.sh"; sourceTree = "<group>"; };
+		F4E338B4B238FEBC2F76100A14EC5277 /* Pods_Hotpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hotpot.framework; path = "Pods-Hotpot.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53CC795604A053EF657F15FF7C2965D /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = SwiftyBluetooth/Source/Result.swift; sourceTree = "<group>"; };
+		FB7170481FE87DC3382520518DFAE618 /* Pods_HotpotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HotpotUITests.framework; path = "Pods-HotpotUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD1E09372323AC49881654121E5EB441 /* CBExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBExtensions.swift; path = SwiftyBluetooth/Source/CBExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AB68D02AF78FB1FF798E9453838537A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F85E7DDDBC776FC16CAA25FA7C0A281 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F0AA7484FB35F6A86CD978E87D3B058 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88AE96BDC1A9C8308645157CF8CC2C2B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B577F5854E20178BA5D2013D9D1696F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2C9B8E52FEC6702DC3B39055D34227 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D1CB527BBC921F0CADF210C69C6DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2103D74682B0F6A265CB663F0A84B843 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29B3D0DDBC9B09B54B0E978787456826 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47FA64AE5FD4AA7720ADCFE19DF011B0 /* KontaktSDK */,
+				6B7A5F148176D384E1F15FAF4EED0108 /* SwiftyBluetooth */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D1004C3B8554B8CAA15EEA751A123E0 /* Pods-HotpotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4F7B0E3DCE015B15908A08B0E020AE91 /* Info.plist */,
+				98756B12BD82E7265574D8CDC27301C2 /* Pods-HotpotUITests.modulemap */,
+				88CD1B41EFB012C11DA4648E15D077E2 /* Pods-HotpotUITests-acknowledgements.markdown */,
+				1810682C14A70F496E432B0084640148 /* Pods-HotpotUITests-acknowledgements.plist */,
+				36428CBB7CBD37014F153F12103E04D4 /* Pods-HotpotUITests-dummy.m */,
+				3FF0691DE1AA0FCA9DCB0440CF9907F5 /* Pods-HotpotUITests-frameworks.sh */,
+				687662A184DD6571508AD0776FF34048 /* Pods-HotpotUITests-resources.sh */,
+				699D7CF60B511908471EB2895F14F6F5 /* Pods-HotpotUITests-umbrella.h */,
+				C783C242EC2464B5FC56B2DDA72E4885 /* Pods-HotpotUITests.debug.xcconfig */,
+				F048A95AFF08B5EE1CFF7AC0005F9D26 /* Pods-HotpotUITests.release.xcconfig */,
+			);
+			name = "Pods-HotpotUITests";
+			path = "Target Support Files/Pods-HotpotUITests";
+			sourceTree = "<group>";
+		};
+		308A8656C395DCED8B14375F0F4377FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E338B4B238FEBC2F76100A14EC5277 /* Pods_Hotpot.framework */,
+				8DF72EFE3AAAADED90C1EE459BEB5F08 /* Pods_HotpotTests.framework */,
+				FB7170481FE87DC3382520518DFAE618 /* Pods_HotpotUITests.framework */,
+				7E088226249EE1C60444424430964220 /* SwiftyBluetooth.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47FA64AE5FD4AA7720ADCFE19DF011B0 /* KontaktSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B3BEC81EF3FD1762484CCC6319097C09 /* Frameworks */,
+			);
+			name = KontaktSDK;
+			path = KontaktSDK;
+			sourceTree = "<group>";
+		};
+		6B7A5F148176D384E1F15FAF4EED0108 /* SwiftyBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				FD1E09372323AC49881654121E5EB441 /* CBExtensions.swift */,
+				4DDC3E2A0DE3CE32FA70AA6AA3ECAFDD /* CBUUIDConvertible.swift */,
+				3FC8CE8E1BBC2899A10660CAC0272F91 /* CBUUIDPath.swift */,
+				863E1AB2B0E3E6A7D60C6F449DA13446 /* Central.swift */,
+				16BB63F181E0F178EEE8001171544664 /* CentralProxy.swift */,
+				281337FBD7D23A8AE412C333341F6A90 /* DescriptorValue.swift */,
+				35DBEA17092394B0C7AF99BE425F0B6E /* Peripheral.swift */,
+				78C14F232DAA90F64613353D91756614 /* PeripheralProxy.swift */,
+				F53CC795604A053EF657F15FF7C2965D /* Result.swift */,
+				0BEFDA24CECDA096D235D5A10B9B6CB6 /* SBError.swift */,
+				B057A3C9359320F73D9C84FCD0649613 /* SwiftyBluetooth.swift */,
+				44DDFA6C92145E64917439DB618D9311 /* Util.swift */,
+				CDE0AFF4E39C778591C5980FABE438A4 /* Support Files */,
+			);
+			name = SwiftyBluetooth;
+			path = SwiftyBluetooth;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				29B3D0DDBC9B09B54B0E978787456826 /* Pods */,
+				308A8656C395DCED8B14375F0F4377FD /* Products */,
+				F236EC578EEF27E8CD3B126827174AC6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B3BEC81EF3FD1762484CCC6319097C09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4525F22F25F47FB9CF850119292D394B /* KontaktSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9BB430F45DE11ED0493EAAD6C2641A0 /* Pods-Hotpot */ = {
+			isa = PBXGroup;
+			children = (
+				B80C28147511053DA1ECBD45A7E8BEFD /* Info.plist */,
+				C800F2FBFE591F420F59638BA525C930 /* Pods-Hotpot.modulemap */,
+				75EC015091E2CE723348D45A5AB7FBE1 /* Pods-Hotpot-acknowledgements.markdown */,
+				C40FC611119445E2A7D6E61126CD05A1 /* Pods-Hotpot-acknowledgements.plist */,
+				9E4E0BDB130FF2ABC7D39958B26D0403 /* Pods-Hotpot-dummy.m */,
+				71F8A2A3CA37CB21353C288A6229D21C /* Pods-Hotpot-frameworks.sh */,
+				B00E9D194153389B64B8E5D3AC4F2A3E /* Pods-Hotpot-resources.sh */,
+				7F720D6FA2E8EDF4A2047E154868F7E6 /* Pods-Hotpot-umbrella.h */,
+				EECA99A6E1B1700CE0D3741BFFE8493E /* Pods-Hotpot.debug.xcconfig */,
+				366B3603A38DE7E584EE24F7C95F6F52 /* Pods-Hotpot.release.xcconfig */,
+			);
+			name = "Pods-Hotpot";
+			path = "Target Support Files/Pods-Hotpot";
+			sourceTree = "<group>";
+		};
+		CDE0AFF4E39C778591C5980FABE438A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DF90AE34555DA43E0CA10EBB5276F1E /* Info.plist */,
+				DE2FEC302FE63DCD9DF8A9E41B1A478C /* SwiftyBluetooth.modulemap */,
+				23DD55C0588E06718D2B4102ECBD660B /* SwiftyBluetooth.xcconfig */,
+				483371E9568E348EAE3C88BC856D132B /* SwiftyBluetooth-dummy.m */,
+				C7FEE8F767C9492F87A37FC6A92C1BEA /* SwiftyBluetooth-prefix.pch */,
+				4299977C38B1F2C783FEF6AD7A559E54 /* SwiftyBluetooth-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyBluetooth";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F1B9B2DDCCE989B22BE38ED540973EFE /* Pods-HotpotTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F08908BD7E2B9DDAB269EE2D3D542E7 /* Info.plist */,
+				85B6AB7D30D27BBAE92CDB5D5503B89C /* Pods-HotpotTests.modulemap */,
+				9D0975335EB9E6310C5EC68EA677604E /* Pods-HotpotTests-acknowledgements.markdown */,
+				4AD27274023FDE2906327FFA9F8E1731 /* Pods-HotpotTests-acknowledgements.plist */,
+				6C40F00A2EA583F52DA5672688AD732B /* Pods-HotpotTests-dummy.m */,
+				65026B070B77A922546B63F1D4F1BD19 /* Pods-HotpotTests-frameworks.sh */,
+				F1FAC5FE75CBD7322EAC5573B81661C8 /* Pods-HotpotTests-resources.sh */,
+				289D757AF68F425F917F527A3448D6AE /* Pods-HotpotTests-umbrella.h */,
+				70225699880270082CCCF0AA24D9FB08 /* Pods-HotpotTests.debug.xcconfig */,
+				4C21DE003D781F8C9425BA6218DDFED2 /* Pods-HotpotTests.release.xcconfig */,
+			);
+			name = "Pods-HotpotTests";
+			path = "Target Support Files/Pods-HotpotTests";
+			sourceTree = "<group>";
+		};
+		F236EC578EEF27E8CD3B126827174AC6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB430F45DE11ED0493EAAD6C2641A0 /* Pods-Hotpot */,
+				F1B9B2DDCCE989B22BE38ED540973EFE /* Pods-HotpotTests */,
+				2D1004C3B8554B8CAA15EEA751A123E0 /* Pods-HotpotUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40A9D939AE4809E78CF27EF801B3E3F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E11D09A2CDB89E7E3C7FD39138EAC8 /* Pods-HotpotUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93AAB5DEF929BA6A95361A9A8C9B65BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931DE406BC308BB68CB02EC6689464C6 /* SwiftyBluetooth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC30E3ADF3B59DBDCA10F496972DA490 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98FA0D6FC21C5FAC9F460741D62D46F5 /* Pods-Hotpot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADC459B7F39488309830FEAAE58E4E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80906198D298A7F332B9A3430A73A6E0 /* Pods-HotpotTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		50C6A927B26E72F7D40AE8B1A656E060 /* Pods-HotpotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FC31D511D76E839C2460F56AA1E7F6 /* Build configuration list for PBXNativeTarget "Pods-HotpotUITests" */;
+			buildPhases = (
+				001C00C62699A3F93725A0108B706643 /* Sources */,
+				3F0AA7484FB35F6A86CD978E87D3B058 /* Frameworks */,
+				40A9D939AE4809E78CF27EF801B3E3F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HotpotUITests";
+			productName = "Pods-HotpotUITests";
+			productReference = FB7170481FE87DC3382520518DFAE618 /* Pods_HotpotUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		767654A2DFD28227E62792758E1DD1CE /* SwiftyBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6718EADE459139C67DBD461551AD4E5E /* Build configuration list for PBXNativeTarget "SwiftyBluetooth" */;
+			buildPhases = (
+				F6CE21177D082C225AF56E9C555B3643 /* Sources */,
+				5B577F5854E20178BA5D2013D9D1696F /* Frameworks */,
+				93AAB5DEF929BA6A95361A9A8C9B65BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyBluetooth;
+			productName = SwiftyBluetooth;
+			productReference = 7E088226249EE1C60444424430964220 /* SwiftyBluetooth.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83FC7FC2F2669F53C47E6612E7C8F10A /* Pods-HotpotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10135F667354DF0D760B365BE59DB782 /* Build configuration list for PBXNativeTarget "Pods-HotpotTests" */;
+			buildPhases = (
+				3764CC2E92C0114897C725850EB3D204 /* Sources */,
+				C4D1CB527BBC921F0CADF210C69C6DB8 /* Frameworks */,
+				CADC459B7F39488309830FEAAE58E4E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-HotpotTests";
+			productName = "Pods-HotpotTests";
+			productReference = 8DF72EFE3AAAADED90C1EE459BEB5F08 /* Pods_HotpotTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D125C182D7D98EBDCF05D9129C9F955B /* Pods-Hotpot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D8AC1E2CC54AE921587AC0FA7C9C7A3 /* Build configuration list for PBXNativeTarget "Pods-Hotpot" */;
+			buildPhases = (
+				0C5E11254BDD357E837DFA2EA00B5B00 /* Sources */,
+				3AB68D02AF78FB1FF798E9453838537A /* Frameworks */,
+				AC30E3ADF3B59DBDCA10F496972DA490 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A0CBF97B9D529C502F62A863632CBC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hotpot";
+			productName = "Pods-Hotpot";
+			productReference = F4E338B4B238FEBC2F76100A14EC5277 /* Pods_Hotpot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 308A8656C395DCED8B14375F0F4377FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D125C182D7D98EBDCF05D9129C9F955B /* Pods-Hotpot */,
+				83FC7FC2F2669F53C47E6612E7C8F10A /* Pods-HotpotTests */,
+				50C6A927B26E72F7D40AE8B1A656E060 /* Pods-HotpotUITests */,
+				767654A2DFD28227E62792758E1DD1CE /* SwiftyBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		001C00C62699A3F93725A0108B706643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51787B40F57CD815F5D6C9E2447B7705 /* Pods-HotpotUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C5E11254BDD357E837DFA2EA00B5B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				152D9FEAE9A64BF2374ED50C2B76DF78 /* Pods-Hotpot-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3764CC2E92C0114897C725850EB3D204 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E827FBBDCB701FB050FA48188E3D778 /* Pods-HotpotTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6CE21177D082C225AF56E9C555B3643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B57EF00B3A9696D35D7F707B195D69D /* CBExtensions.swift in Sources */,
+				761E1625D49D78BBAFDD59768D62B5EE /* CBUUIDConvertible.swift in Sources */,
+				76F6852180BA2C1B1E5865A5D863E186 /* CBUUIDPath.swift in Sources */,
+				89579E676B4A5B953BEAC356953FB066 /* Central.swift in Sources */,
+				D814A7DAC65C1A930BB22D7DCED0102B /* CentralProxy.swift in Sources */,
+				42ADB5CC1E6AC21958F53E214EE8E180 /* DescriptorValue.swift in Sources */,
+				5E3B0A6FF7012D9F675999EB35D32C17 /* Peripheral.swift in Sources */,
+				7AF92385B7AA188EA9130E5DD96B543F /* PeripheralProxy.swift in Sources */,
+				EF2A59D8DC29CF2A1EE10EA2BC19AEFB /* Result.swift in Sources */,
+				494FF77CA9FD3E1EEE12584825DFB0CC /* SBError.swift in Sources */,
+				889A22EFF5386677BDD885136F39137B /* SwiftyBluetooth-dummy.m in Sources */,
+				C2E1FA1DAC166BE643E4741096C32FEE /* SwiftyBluetooth.swift in Sources */,
+				B6F1BBFEA8B0C63C40C133D74B4C18A9 /* Util.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A0CBF97B9D529C502F62A863632CBC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyBluetooth;
+			target = 767654A2DFD28227E62792758E1DD1CE /* SwiftyBluetooth */;
+			targetProxy = 9B57EB5D7AD3D3FEA2117DCEAC865164 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		20B615CB7AA8DA80B35067BBB26E65C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70225699880270082CCCF0AA24D9FB08 /* Pods-HotpotTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotpotTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotpotTests/Pods-HotpotTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotpotTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77235820FD77D98CAC62FD61B357A698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DD55C0588E06718D2B4102ECBD660B /* SwiftyBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93149AA5309FCD4A7C4FAB514D8DC422 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C783C242EC2464B5FC56B2DDA72E4885 /* Pods-HotpotUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotpotUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotpotUITests/Pods-HotpotUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotpotUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB25EB6D369401B18A773937B4502313 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C21DE003D781F8C9425BA6218DDFED2 /* Pods-HotpotTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotpotTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotpotTests/Pods-HotpotTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotpotTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD0D2B8C3BBBDC694972B4F6C06C2C15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EECA99A6E1B1700CE0D3741BFFE8493E /* Pods-Hotpot.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hotpot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hotpot/Pods-Hotpot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hotpot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7D3091B0318551980CECABE7D3F8F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DD55C0588E06718D2B4102ECBD660B /* SwiftyBluetooth.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyBluetooth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyBluetooth/SwiftyBluetooth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyBluetooth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF73440671D584ABC59F4B2AFDB3D72B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F048A95AFF08B5EE1CFF7AC0005F9D26 /* Pods-HotpotUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HotpotUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HotpotUITests/Pods-HotpotUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HotpotUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB945F44C3DEAAC4AB39F2BFB12F15EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 366B3603A38DE7E584EE24F7C95F6F52 /* Pods-Hotpot.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hotpot/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hotpot/Pods-Hotpot.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hotpot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10135F667354DF0D760B365BE59DB782 /* Build configuration list for PBXNativeTarget "Pods-HotpotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20B615CB7AA8DA80B35067BBB26E65C7 /* Debug */,
+				BB25EB6D369401B18A773937B4502313 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D8AC1E2CC54AE921587AC0FA7C9C7A3 /* Build configuration list for PBXNativeTarget "Pods-Hotpot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD0D2B8C3BBBDC694972B4F6C06C2C15 /* Debug */,
+				FB945F44C3DEAAC4AB39F2BFB12F15EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6718EADE459139C67DBD461551AD4E5E /* Build configuration list for PBXNativeTarget "SwiftyBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D3091B0318551980CECABE7D3F8F50 /* Debug */,
+				77235820FD77D98CAC62FD61B357A698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FC31D511D76E839C2460F56AA1E7F6 /* Build configuration list for PBXNativeTarget "Pods-HotpotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93149AA5309FCD4A7C4FAB514D8DC422 /* Debug */,
+				DF73440671D584ABC59F4B2AFDB3D72B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

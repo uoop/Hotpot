@@ -8,15 +8,55 @@
 
 import UIKit
 import CoreData
+import KontaktSDK
+
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, KTKBeaconManagerDelegate {
+    
 
     var window: UIWindow?
+    var beaconManager: KTKBeaconManager!
+    var card_count: Int!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Set API Key
+        Kontakt.setAPIKey("EQZwkbzlDoKsXwsXeMdavfWIwcqGHehp")
+        
+        // Initiate Beacon Manager
+        beaconManager = KTKBeaconManager(delegate: self)
+        beaconManager.requestLocationAlwaysAuthorization()
+        
+        // Region
+        let proximityUUID = UUID(uuidString: "F7826DA6-4FA2-4E98-8024-BC5B71E0893E")
+        let region = KTKBeaconRegion(proximityUUID: proximityUUID!, identifier: "region1")
+        
+        // Start Monitoring and Ranging
+        
+        switch KTKBeaconManager.locationAuthorizationStatus() {
+        case .notDetermined:
+            beaconManager.requestLocationAlwaysAuthorization()
+        case .denied, .restricted:
+            print("Location service not allowed1")
+        // No access to Location Services
+        case .authorizedWhenInUse:
+            print("Location allowed1")
+            // For most iBeacon-based app this type of
+        // permission is not adequate
+        case .authorizedAlways:
+            print("Always Allowed location1")
+            if KTKBeaconManager.isMonitoringAvailable() {
+                beaconManager.startMonitoring(for: region)
+                
+                beaconManager.startRangingBeacons(in: region)
+            }
+        }
+        
+        
+        
+        
         return true
     }
 
@@ -87,6 +127,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+    
+    
+    
+    func beaconManager(_ manager: KTKBeaconManager, didChangeLocationAuthorizationStatus status: CLAuthorizationStatus) {
+        
+        
+    }
+    
+    func beaconManager(_ manager: KTKBeaconManager, didEnter region: KTKBeaconRegion) {
+        print("Enter region \(region)")
+    }
+    
+    func beaconManager(_ manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
+        print("Exit region \(region)")
+    }
+    
+    func beaconManager(_ manager: KTKBeaconManager, didRangeBeacons beacons: [CLBeacon], in region: KTKBeaconRegion) {
+        print("Ranged beacons count: \(beacons.count)")
+        card_count = beacons.count
     }
 
 }
