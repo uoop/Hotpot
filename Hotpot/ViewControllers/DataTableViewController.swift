@@ -7,17 +7,28 @@
 //
 
 import UIKit
+import AWSCore
+import AWSS3
+import AWSCognito
 
 class DataTableViewController: UITableViewController {
+    
+    
+    let bucketName = "cloud-project-summer2018"
+    var contentUrl: URL!
+    var s3Url: URL!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USWest2,
+                                                                identityPoolId:"us-west-2:ec4d3e54-8f83-447f-abe9-a88f31f5dfda")
+        
+        let configuration = AWSServiceConfiguration(region:.USWest2, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        s3Url = AWSS3.default().configuration.endpoint.url
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +40,23 @@ class DataTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableViewCell", for: indexPath)
 
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -82,14 +93,57 @@ class DataTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        uploadFile(with: "egg", type: "txt")
+        
+        let alertController = UIAlertController(title: "Success", message: "Your data has been uploaded!", preferredStyle: .alert)
+        let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: { (action) -> Void in
+        })
+        alertController.addAction(cancelButton)
+        self.navigationController!.present(alertController, animated: true, completion: nil)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
+    
+    
+    func uploadFile(with resource: String, type: String) {
+        let key = "\(resource).\(type)"
+        let localImagePath = Bundle.main.path(forResource: resource, ofType: type)!
+        let localImageURL = URL(fileURLWithPath: localImagePath)
+        print("the csv file:\(localImageURL)")
+        
+        let Uprequest = AWSS3TransferManagerUploadRequest()!
+        Uprequest.bucket = bucketName
+        Uprequest.key = key
+        Uprequest.body = localImageURL
+        Uprequest.acl = .publicReadWrite
+        
+        let transferManager = AWSS3TransferManager.default()
+        transferManager.upload(Uprequest).continueWith(executor: AWSExecutor.mainThread()) { (task) -> Any?
+            in
+            if let error = task.error {
+                print(error)
+            }
+            if task.result != nil {
+                print("Uploaded \(key)")
+                let contentUrl =
+                    self.s3Url.appendingPathComponent(self.bucketName).appendingPathComponent(key)
+                self.contentUrl = contentUrl
+            }
+            
+            return nil
+        }
+    }
+ 
 
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		293399B1EAACFBA01ECBE3EB /* Pods_HotpotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 119A914222AD638A2D9BC5E6 /* Pods_HotpotUITests.framework */; };
+		3104339A2022ECBB00DAFFA7 /* hotpot.csv in Resources */ = {isa = PBXBuildFile; fileRef = 310433992022ECBA00DAFFA7 /* hotpot.csv */; };
+		3104339C20233CA900DAFFA7 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104339B20233CA900DAFFA7 /* DataTableViewCell.swift */; };
+		3104339E2023413900DAFFA7 /* egg.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3104339D2023413900DAFFA7 /* egg.txt */; };
 		310DC9A020117B4F00B872F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310DC99F20117B4F00B872F0 /* AppDelegate.swift */; };
 		310DC9A520117B4F00B872F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310DC9A320117B4F00B872F0 /* Main.storyboard */; };
 		310DC9A820117B4F00B872F0 /* Hotpot.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 310DC9A620117B4F00B872F0 /* Hotpot.xcdatamodeld */; };
@@ -15,6 +18,7 @@
 		310DC9AD20117B4F00B872F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310DC9AB20117B4F00B872F0 /* LaunchScreen.storyboard */; };
 		310DC9B820117B4F00B872F0 /* HotpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310DC9B720117B4F00B872F0 /* HotpotTests.swift */; };
 		310DC9C320117B4F00B872F0 /* HotpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310DC9C220117B4F00B872F0 /* HotpotUITests.swift */; };
+		312BB9B22017FAB800E2E284 /* CardsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312BB9B12017FAB800E2E284 /* CardsTableViewCell.swift */; };
 		3134542120156B5100816D80 /* KBeaconManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134542020156B5100816D80 /* KBeaconManagerDelegate.swift */; };
 		31CA7616201356F600514290 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CA7615201356F600514290 /* RoundButton.swift */; };
 		31CA761B20135D8000514290 /* CardsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CA761A20135D8000514290 /* CardsTableViewController.swift */; };
@@ -46,6 +50,9 @@
 		064E1F7C09A0819DA36A18AD /* Pods-HotpotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HotpotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HotpotUITests/Pods-HotpotUITests.release.xcconfig"; sourceTree = "<group>"; };
 		119A914222AD638A2D9BC5E6 /* Pods_HotpotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HotpotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E31875D7A088A2C579B624D /* Pods_Hotpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hotpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		310433992022ECBA00DAFFA7 /* hotpot.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hotpot.csv; sourceTree = "<group>"; };
+		3104339B20233CA900DAFFA7 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		3104339D2023413900DAFFA7 /* egg.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = egg.txt; sourceTree = "<group>"; };
 		310DC99C20117B4F00B872F0 /* Hotpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hotpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310DC99F20117B4F00B872F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310DC9A420117B4F00B872F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +66,7 @@
 		310DC9BE20117B4F00B872F0 /* HotpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		310DC9C220117B4F00B872F0 /* HotpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotpotUITests.swift; sourceTree = "<group>"; };
 		310DC9C420117B4F00B872F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312BB9B12017FAB800E2E284 /* CardsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewCell.swift; sourceTree = "<group>"; };
 		3134542020156B5100816D80 /* KBeaconManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBeaconManagerDelegate.swift; sourceTree = "<group>"; };
 		31CA7615201356F600514290 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		31CA761A20135D8000514290 /* CardsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTableViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		310433972022E8CE00DAFFA7 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				3104339D2023413900DAFFA7 /* egg.txt */,
+				310433992022ECBA00DAFFA7 /* hotpot.csv */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		310DC99320117B4F00B872F0 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +145,7 @@
 		310DC99E20117B4F00B872F0 /* Hotpot */ = {
 			isa = PBXGroup;
 			children = (
+				310433972022E8CE00DAFFA7 /* Files */,
 				31CA76232013676C00514290 /* Helper */,
 				31CA76192013575200514290 /* Delegates */,
 				31CA76182013572500514290 /* ViewControllers */,
@@ -162,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				31CA7615201356F600514290 /* RoundButton.swift */,
+				312BB9B12017FAB800E2E284 /* CardsTableViewCell.swift */,
+				3104339B20233CA900DAFFA7 /* DataTableViewCell.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -344,7 +364,9 @@
 			files = (
 				310DC9AD20117B4F00B872F0 /* LaunchScreen.storyboard in Resources */,
 				310DC9AA20117B4F00B872F0 /* Assets.xcassets in Resources */,
+				3104339A2022ECBB00DAFFA7 /* hotpot.csv in Resources */,
 				310DC9A520117B4F00B872F0 /* Main.storyboard in Resources */,
+				3104339E2023413900DAFFA7 /* egg.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,13 +475,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Hotpot/Pods-Hotpot-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
 				"${PODS_ROOT}/KontaktSDK/Cocoapods/iOS/KontaktSDK.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyBluetooth/SwiftyBluetooth.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KontaktSDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBluetooth.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -524,6 +550,8 @@
 				31CA7616201356F600514290 /* RoundButton.swift in Sources */,
 				31CA761D20135D9A00514290 /* DataTableViewController.swift in Sources */,
 				3134542120156B5100816D80 /* KBeaconManagerDelegate.swift in Sources */,
+				312BB9B22017FAB800E2E284 /* CardsTableViewCell.swift in Sources */,
+				3104339C20233CA900DAFFA7 /* DataTableViewCell.swift in Sources */,
 				310DC9A820117B4F00B872F0 /* Hotpot.xcdatamodeld in Sources */,
 				31CA761F2013620100514290 /* TrackingViewController.swift in Sources */,
 				31CA761B20135D8000514290 /* CardsTableViewController.swift in Sources */,

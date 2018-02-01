@@ -3,8 +3,10 @@ platform :ios, '10.3'
 
 target 'Hotpot' do
 use_frameworks!
-pod 'SwiftyBluetooth'
 pod 'KontaktSDK'
+pod 'AWSCore'
+pod 'AWSCognito'
+pod 'AWSS3'
 # Pods for Hotpot
 
   target 'HotpotTests' do

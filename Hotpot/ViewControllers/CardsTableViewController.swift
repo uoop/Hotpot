@@ -9,121 +9,33 @@
 import UIKit
 import KontaktSDK
 
-class CardsTableViewController: UITableViewController {
+
+class CardsTableViewController: UITableViewController{
     
 //    var beaconManager: KTKBeaconManager!
-//    var beacons:[CLBeacon]!
+    var card_count: Int = 0
+    var myDevices:[KTKNearbyDevice] = []
+    
+    var devicesManager: KTKDevicesManager!
     
     
 
     
 
     override func viewDidLoad() {
-        
-        
-        
-//        super.viewDidLoad()
-//
-//        Kontakt.setAPIKey("EQZwkbzlDoKsXwsXeMdavfWIwcqGHehp")
-//        beaconManager = KTKBeaconManager(delegate: self )
-//
-//
-//        let myProximityUuid = UUID(uuidString: "A1EA81F0-0E1B-D4A1-B840-63F88C8DA1EA")
-//        let region = KTKBeaconRegion(proximityUUID: myProximityUuid!, identifier: "Region1")
-//        //beacons = nil
-//
-//
-//
-//        switch KTKBeaconManager.locationAuthorizationStatus() {
-//        case .notDetermined:
-//            beaconManager.requestLocationAlwaysAuthorization()
-//        case .denied, .restricted:
-//            print("Location service not allowed1")
-//        // No access to Location Services
-//        case .authorizedWhenInUse:
-//            print("Location allowed1")
-//            // For most iBeacon-based app this type of
-//        // permission is not adequate
-//        case .authorizedAlways:
-//            print("Always Allowed location1")
-//            if KTKBeaconManager.isMonitoringAvailable() {
-//                beaconManager.startMonitoring(for: region)
-//            }
-//        }
-//        switch KTKBeaconManager.locationAuthorizationStatus() {
-//        case .notDetermined:
-//            beaconManager.requestLocationAlwaysAuthorization()
-//        case .denied, .restricted:
-//            print("Location service not allowed2")
-//        // No access to Location Services
-//        case .authorizedWhenInUse:
-//            print("Location allowed2")
-//            // For most iBeacon-based app this type of
-//        // permission is not adequate
-//        case .authorizedAlways:
-//            print("Always Allowed location2")
-//            if KTKBeaconManager.isMonitoringAvailable() {
-//                beaconManager.startMonitoring(for: region)
-//                beaconManager(beaconManager, didEnter: region)
-//                print("did enter outside")
-//                print("searching for beacons")
-//                if beacons != nil {
-//                    beaconManager(beaconManager, didRangeBeacons: beacons, in: region)
-//                }else{
-//                    print("cant find any devices")
-//
-//
-//
-//                }
-//
-//
-//
-//
-//                beaconManager(beaconManager, didExitRegion: region)
-//                print("did Exist outside")
-//            }
-//        }
-        
-        
-        
-        
-        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        
+        devicesManager = KTKDevicesManager(delegate: self )
+        devicesManager.startDevicesDiscovery(withInterval: 2.0)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+
     
     
     override func viewWillAppear(_ animated: Bool) {
-        print("viewwillapper")
+       
     }
-    
-    
-//    func beaconManager(_ manager: KTKBeaconManager, didEnter region: KTKBeaconRegion) {
-//        print("did enter inside")
-//        manager.startRangingBeacons(in: region)
-//    }
-//
-//    func beaconManager(_ manager: KTKBeaconManager, didExitRegion region: KTKBeaconRegion) {
-//        print("did exit inside")
-//        manager.stopRangingBeacons(in: region)
-//    }
-//    
-//    
-//    
-//    
-//    func beaconManager(_ manager: KTKBeaconManager, didRangeBeacons beacons: [CLBeacon], in region: KTKBeaconRegion) {
-//        for beacon in beacons {
-//            print("in the for loop")
-//            print("Major: \(beacon.major) and Minor: \(beacon.minor) from \(region.identifier) in \(beacon.proximity) proximity\(beacon.rssi),\(beacon.description)")
-//        }
-//    }
-    
-    
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -140,18 +52,33 @@ class CardsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return card_count
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "CardsTableViewCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CardsTableViewCell", for: indexPath) as? CardsTableViewCell else {
+            // Add a new Subject.
+            fatalError("The dequeued cell is not an instance of SubjectTableViewCell.")
+        }
+        
+        
+        let dev = myDevices[indexPath.row]
+        cell.cardName.text = dev.name
+        cell.cardRSSI.text = String(describing: dev.rssi)
+        cell.cardID.text = dev.uniqueID
+
+        
 
         return cell
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -188,17 +115,62 @@ class CardsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
+    //MARK: - Actions
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alertController = UIAlertController(title: "Success", message: "Your card has been connected!", preferredStyle: .alert)
+        let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: { (action) -> Void in
+        })
+        alertController.addAction(cancelButton)
+        self.navigationController!.present(alertController, animated: true, completion: nil)
+        
+        let selectedCardID = myDevices[indexPath.row].uniqueID
+        
+        
+        TrackingViewController.connectedCard = selectedCardID!
+    }
+
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+
+        
+        
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+ 
 
 }
+
+
+
+
+extension CardsTableViewController: KTKDevicesManagerDelegate {
+    
+    func devicesManager(_ manager: KTKDevicesManager, didDiscover devices: [KTKNearbyDevice]) {
+
+        
+        card_count = devices.count
+        
+        if card_count != 0 {
+        
+            myDevices = devices
+            
+        }
+        tableView.reloadData()
+
+        
+        
+    }
+}
+
+
+
 
 
 
