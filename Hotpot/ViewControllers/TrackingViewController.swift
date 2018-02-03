@@ -23,6 +23,7 @@ class TrackingViewController: UIViewController{
     
     
     
+    
 //    @IBAction func unwindToTracking(segue: UIStoryboardSegue) {
 //        
 //        switch(segue.identifier ?? "") {
@@ -60,6 +61,10 @@ class TrackingViewController: UIViewController{
     
     
     @IBAction func showHeatmap(_ sender: RoundButton) {
+        
+        let url = URL(string: "https://plot.ly/~LindenGoode/1.png")
+        let data = try? Data(contentsOf: url!) 
+        heatmapImage.image = UIImage(data: data!)
     }
     
     

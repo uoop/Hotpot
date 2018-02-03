@@ -95,7 +95,7 @@ class DataTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        uploadFile(with: "egg", type: "txt")
+        uploadFile(with: "hotpot1", type: "csv")
         
         let alertController = UIAlertController(title: "Success", message: "Your data has been uploaded!", preferredStyle: .alert)
         let cancelButton = UIAlertAction(title: "OK", style: .cancel, handler: { (action) -> Void in
@@ -120,7 +120,7 @@ class DataTableViewController: UITableViewController {
         let key = "\(resource).\(type)"
         let localImagePath = Bundle.main.path(forResource: resource, ofType: type)!
         let localImageURL = URL(fileURLWithPath: localImagePath)
-        print("the csv file:\(localImageURL)")
+
         
         let Uprequest = AWSS3TransferManagerUploadRequest()!
         Uprequest.bucket = bucketName
@@ -135,7 +135,7 @@ class DataTableViewController: UITableViewController {
                 print(error)
             }
             if task.result != nil {
-                print("Uploaded \(key)")
+
                 let contentUrl =
                     self.s3Url.appendingPathComponent(self.bucketName).appendingPathComponent(key)
                 self.contentUrl = contentUrl
